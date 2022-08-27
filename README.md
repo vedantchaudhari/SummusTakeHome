@@ -1,5 +1,5 @@
 # SummusTakeHome
-Take home project for SUMMNUS
+Take home project for SUMMUS
 
 Completed in 4 hours over 2 days
 
