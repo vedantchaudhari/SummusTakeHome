@@ -8,17 +8,67 @@
 
 /* Begin PBXBuildFile section */
 		FA281F4928B81A7700832933 /* SummusTakeHomeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA281F4828B81A7700832933 /* SummusTakeHomeApp.swift */; };
-		FA281F4B28B81A7700832933 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA281F4A28B81A7700832933 /* ContentView.swift */; };
+		FA281F4B28B81A7700832933 /* PostsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA281F4A28B81A7700832933 /* PostsView.swift */; };
 		FA281F4D28B81A7800832933 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA281F4C28B81A7800832933 /* Assets.xcassets */; };
 		FA281F5028B81A7800832933 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA281F4F28B81A7800832933 /* Preview Assets.xcassets */; };
+		FA281F5A28B81D8D00832933 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA281F5928B81D8D00832933 /* Post.swift */; };
+		FA281F5D28B824D600832933 /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA281F5C28B824D600832933 /* Endpoint.swift */; };
+		FA281F5F28B8256700832933 /* Networker.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA281F5E28B8256700832933 /* Networker.swift */; };
+		FA281F6228B82F4300832933 /* Endpoint+Posts.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA281F6128B82F4300832933 /* Endpoint+Posts.swift */; };
+		FA281F6628B8305400832933 /* PostsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA281F6528B8305400832933 /* PostsService.swift */; };
+		FA281F6928B831E100832933 /* PostsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA281F6828B831E100832933 /* PostsViewModel.swift */; };
+		FA281F6C28B840E000832933 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA281F6B28B840E000832933 /* User.swift */; };
+		FA281F6E28B8452500832933 /* Endpoint+Users.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA281F6D28B8452500832933 /* Endpoint+Users.swift */; };
+		FA281F7028B8455300832933 /* UsersService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA281F6F28B8455300832933 /* UsersService.swift */; };
+		FA281F7228B84DD300832933 /* DetailedPostsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA281F7128B84DD300832933 /* DetailedPostsView.swift */; };
+		FA281F7428B84DF600832933 /* DetailedPostsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA281F7328B84DF600832933 /* DetailedPostsViewModel.swift */; };
+		FA281F7728B86D1B00832933 /* PostsRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA281F7628B86D1B00832933 /* PostsRouter.swift */; };
+		FA281F7A28B86D8900832933 /* DetailedPostsViewConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA281F7928B86D8900832933 /* DetailedPostsViewConfigurator.swift */; };
+		FA281F7C28B873A000832933 /* Comment.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA281F7B28B873A000832933 /* Comment.swift */; };
+		FA281F7E28B873E200832933 /* Endpoint+Comments.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA281F7D28B873E200832933 /* Endpoint+Comments.swift */; };
+		FA281F8028B8FEEA00832933 /* CommentsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA281F7F28B8FEEA00832933 /* CommentsService.swift */; };
+		FA281F8228B9103800832933 /* DetailedAuthorViewConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA281F8128B9103800832933 /* DetailedAuthorViewConfigurator.swift */; };
+		FA281F8428B910AF00832933 /* DetailedAuthorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA281F8328B910AF00832933 /* DetailedAuthorView.swift */; };
+		FA281F8628B910E700832933 /* DetailedAuthorViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA281F8528B910E700832933 /* DetailedAuthorViewModel.swift */; };
+		FA281F8828B9117D00832933 /* AuthorRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA281F8728B9117D00832933 /* AuthorRouter.swift */; };
+		FA281F8A28B98B9600832933 /* Endpoint+Albums.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA281F8928B98B9600832933 /* Endpoint+Albums.swift */; };
+		FA281F8C28B98BF000832933 /* PhotosService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA281F8B28B98BF000832933 /* PhotosService.swift */; };
+		FA281F8E28B98C1E00832933 /* Album.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA281F8D28B98C1E00832933 /* Album.swift */; };
+		FA281F9028B98F3400832933 /* Endpoint+Photos.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA281F8F28B98F3400832933 /* Endpoint+Photos.swift */; };
+		FA281F9228B98FAC00832933 /* Photo.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA281F9128B98FAC00832933 /* Photo.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		FA281F4528B81A7700832933 /* SummusTakeHome.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SummusTakeHome.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA281F4828B81A7700832933 /* SummusTakeHomeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SummusTakeHomeApp.swift; sourceTree = "<group>"; };
-		FA281F4A28B81A7700832933 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		FA281F4A28B81A7700832933 /* PostsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsView.swift; sourceTree = "<group>"; };
 		FA281F4C28B81A7800832933 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FA281F4F28B81A7800832933 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		FA281F5928B81D8D00832933 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		FA281F5C28B824D600832933 /* Endpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
+		FA281F5E28B8256700832933 /* Networker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Networker.swift; sourceTree = "<group>"; };
+		FA281F6128B82F4300832933 /* Endpoint+Posts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Endpoint+Posts.swift"; sourceTree = "<group>"; };
+		FA281F6528B8305400832933 /* PostsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsService.swift; sourceTree = "<group>"; };
+		FA281F6828B831E100832933 /* PostsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsViewModel.swift; sourceTree = "<group>"; };
+		FA281F6B28B840E000832933 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		FA281F6D28B8452500832933 /* Endpoint+Users.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Endpoint+Users.swift"; sourceTree = "<group>"; };
+		FA281F6F28B8455300832933 /* UsersService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersService.swift; sourceTree = "<group>"; };
+		FA281F7128B84DD300832933 /* DetailedPostsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailedPostsView.swift; sourceTree = "<group>"; };
+		FA281F7328B84DF600832933 /* DetailedPostsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailedPostsViewModel.swift; sourceTree = "<group>"; };
+		FA281F7628B86D1B00832933 /* PostsRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsRouter.swift; sourceTree = "<group>"; };
+		FA281F7928B86D8900832933 /* DetailedPostsViewConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailedPostsViewConfigurator.swift; sourceTree = "<group>"; };
+		FA281F7B28B873A000832933 /* Comment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Comment.swift; sourceTree = "<group>"; };
+		FA281F7D28B873E200832933 /* Endpoint+Comments.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Endpoint+Comments.swift"; sourceTree = "<group>"; };
+		FA281F7F28B8FEEA00832933 /* CommentsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentsService.swift; sourceTree = "<group>"; };
+		FA281F8128B9103800832933 /* DetailedAuthorViewConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailedAuthorViewConfigurator.swift; sourceTree = "<group>"; };
+		FA281F8328B910AF00832933 /* DetailedAuthorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailedAuthorView.swift; sourceTree = "<group>"; };
+		FA281F8528B910E700832933 /* DetailedAuthorViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailedAuthorViewModel.swift; sourceTree = "<group>"; };
+		FA281F8728B9117D00832933 /* AuthorRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorRouter.swift; sourceTree = "<group>"; };
+		FA281F8928B98B9600832933 /* Endpoint+Albums.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Endpoint+Albums.swift"; sourceTree = "<group>"; };
+		FA281F8B28B98BF000832933 /* PhotosService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosService.swift; sourceTree = "<group>"; };
+		FA281F8D28B98C1E00832933 /* Album.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Album.swift; sourceTree = "<group>"; };
+		FA281F8F28B98F3400832933 /* Endpoint+Photos.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Endpoint+Photos.swift"; sourceTree = "<group>"; };
+		FA281F9128B98FAC00832933 /* Photo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Photo.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +101,13 @@
 		FA281F4728B81A7700832933 /* SummusTakeHome */ = {
 			isa = PBXGroup;
 			children = (
+				FA281F5B28B824CC00832933 /* Network */,
+				FA281F7828B86D7000832933 /* Configurator */,
+				FA281F7528B86CF400832933 /* Router */,
+				FA281F5828B81D4A00832933 /* Model */,
+				FA281F6A28B8333300832933 /* View */,
+				FA281F6728B831CA00832933 /* ViewModel */,
 				FA281F4828B81A7700832933 /* SummusTakeHomeApp.swift */,
-				FA281F4A28B81A7700832933 /* ContentView.swift */,
 				FA281F4C28B81A7800832933 /* Assets.xcassets */,
 				FA281F4E28B81A7800832933 /* Preview Content */,
 			);
@@ -65,6 +120,98 @@
 				FA281F4F28B81A7800832933 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		FA281F5828B81D4A00832933 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FA281F5928B81D8D00832933 /* Post.swift */,
+				FA281F6B28B840E000832933 /* User.swift */,
+				FA281F7B28B873A000832933 /* Comment.swift */,
+				FA281F8D28B98C1E00832933 /* Album.swift */,
+				FA281F9128B98FAC00832933 /* Photo.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		FA281F5B28B824CC00832933 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				FA281F6428B8304800832933 /* Service */,
+				FA281F6328B8303D00832933 /* Core */,
+				FA281F6028B82F2E00832933 /* Endpoints */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		FA281F6028B82F2E00832933 /* Endpoints */ = {
+			isa = PBXGroup;
+			children = (
+				FA281F6128B82F4300832933 /* Endpoint+Posts.swift */,
+				FA281F6D28B8452500832933 /* Endpoint+Users.swift */,
+				FA281F7D28B873E200832933 /* Endpoint+Comments.swift */,
+				FA281F8928B98B9600832933 /* Endpoint+Albums.swift */,
+				FA281F8F28B98F3400832933 /* Endpoint+Photos.swift */,
+			);
+			path = Endpoints;
+			sourceTree = "<group>";
+		};
+		FA281F6328B8303D00832933 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				FA281F5C28B824D600832933 /* Endpoint.swift */,
+				FA281F5E28B8256700832933 /* Networker.swift */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		FA281F6428B8304800832933 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				FA281F6528B8305400832933 /* PostsService.swift */,
+				FA281F6F28B8455300832933 /* UsersService.swift */,
+				FA281F7F28B8FEEA00832933 /* CommentsService.swift */,
+				FA281F8B28B98BF000832933 /* PhotosService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		FA281F6728B831CA00832933 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				FA281F6828B831E100832933 /* PostsViewModel.swift */,
+				FA281F7328B84DF600832933 /* DetailedPostsViewModel.swift */,
+				FA281F8528B910E700832933 /* DetailedAuthorViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		FA281F6A28B8333300832933 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FA281F4A28B81A7700832933 /* PostsView.swift */,
+				FA281F7128B84DD300832933 /* DetailedPostsView.swift */,
+				FA281F8328B910AF00832933 /* DetailedAuthorView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		FA281F7528B86CF400832933 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				FA281F7628B86D1B00832933 /* PostsRouter.swift */,
+				FA281F8728B9117D00832933 /* AuthorRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		FA281F7828B86D7000832933 /* Configurator */ = {
+			isa = PBXGroup;
+			children = (
+				FA281F7928B86D8900832933 /* DetailedPostsViewConfigurator.swift */,
+				FA281F8128B9103800832933 /* DetailedAuthorViewConfigurator.swift */,
+			);
+			path = Configurator;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +284,33 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FA281F4B28B81A7700832933 /* ContentView.swift in Sources */,
+				FA281F8A28B98B9600832933 /* Endpoint+Albums.swift in Sources */,
+				FA281F7E28B873E200832933 /* Endpoint+Comments.swift in Sources */,
+				FA281F8828B9117D00832933 /* AuthorRouter.swift in Sources */,
+				FA281F9228B98FAC00832933 /* Photo.swift in Sources */,
+				FA281F8428B910AF00832933 /* DetailedAuthorView.swift in Sources */,
+				FA281F8C28B98BF000832933 /* PhotosService.swift in Sources */,
+				FA281F7428B84DF600832933 /* DetailedPostsViewModel.swift in Sources */,
+				FA281F7028B8455300832933 /* UsersService.swift in Sources */,
+				FA281F9028B98F3400832933 /* Endpoint+Photos.swift in Sources */,
+				FA281F8028B8FEEA00832933 /* CommentsService.swift in Sources */,
+				FA281F6228B82F4300832933 /* Endpoint+Posts.swift in Sources */,
+				FA281F8E28B98C1E00832933 /* Album.swift in Sources */,
+				FA281F8628B910E700832933 /* DetailedAuthorViewModel.swift in Sources */,
+				FA281F7228B84DD300832933 /* DetailedPostsView.swift in Sources */,
+				FA281F7A28B86D8900832933 /* DetailedPostsViewConfigurator.swift in Sources */,
+				FA281F7728B86D1B00832933 /* PostsRouter.swift in Sources */,
+				FA281F4B28B81A7700832933 /* PostsView.swift in Sources */,
 				FA281F4928B81A7700832933 /* SummusTakeHomeApp.swift in Sources */,
+				FA281F6E28B8452500832933 /* Endpoint+Users.swift in Sources */,
+				FA281F5A28B81D8D00832933 /* Post.swift in Sources */,
+				FA281F8228B9103800832933 /* DetailedAuthorViewConfigurator.swift in Sources */,
+				FA281F6928B831E100832933 /* PostsViewModel.swift in Sources */,
+				FA281F7C28B873A000832933 /* Comment.swift in Sources */,
+				FA281F5D28B824D600832933 /* Endpoint.swift in Sources */,
+				FA281F5F28B8256700832933 /* Networker.swift in Sources */,
+				FA281F6C28B840E000832933 /* User.swift in Sources */,
+				FA281F6628B8305400832933 /* PostsService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
